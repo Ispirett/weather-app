@@ -18,11 +18,17 @@ function showPosition(position) {
 
 
 
-    let urlLocation = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+    let urlLocation = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
     getWeather(urlLocation);
 }
 
+
+window.onload = () => {
+
+    $('weather-img').setAttribute('src', weatherImages.clear);
+
+};
 
 
 
@@ -84,7 +90,7 @@ handleUserInput =()=>{
 
     city = $('city').value;
 
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey} `;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey} `;
 
 
     //handle fetch
@@ -97,11 +103,7 @@ handleUserInput =()=>{
 
 };
 
-window.onload = () => {
 
-    $('weather-img').setAttribute('src', weatherImages.clear);
-
-};
 
 
 getWeather = (workingUrl) =>{
