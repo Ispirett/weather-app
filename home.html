@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather app</title>
+    <script  src="index.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+<div id="weather-app">
+    <div id="weather-header">
+        <h1>Weather <em>App</em></h1>
+    </div>
+
+
+    <div id="weather-body">
+
+
+                <div id="form">
+                  <label for="city"> Enter city location</label>    
+                <input id="city" type="text"     placeholder="Enter Your City Name">
+                <button id="btn" type="submit" onclick="handleUserInput()">Submit</button>
+                <button onclick="getLocation()">your home</button>
+                </div>
+                <div id="weather-status">
+
+                <h2 id="country"> </h2>
+                <h3 id="country-city"></h3>
+                <h5 id="weather-type"></h5>
+                <h5 id="humidity"></h5>
+
+                <div id="img-div">
+                    <img src="#" alt="image" id="weather-img">
+                </div>
+
+                <div id="temp-div">
+                    <h5 id="temp"> </h5>
+                </div>
+
+            </div>
+        <p id="demo">   </p>
+
+            
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
+    <div title="weather-footer">
+        <p> Made by Isaac Browne</p>
+
+    </div>
+
+
+</div>
+
+</div>
+</body>
+</html>
