@@ -135,7 +135,6 @@ getWeather = (workingUrl) =>{
 };
 
 
-let counter = 2;
 convert = (f) => {
 
 
@@ -144,12 +143,12 @@ convert = (f) => {
    // let ff = (c * 9 ) / 5 + 32;
 
 
-    if (counter === 2) {
+
         $('temp').innerHTML = `<h4> Todays current tempeture is  <em>°C ${parseInt(c)}</em> </h4>`;
-        counter -= 1;
+
         console.log(counter)
 
-    }
+
 
 
 
