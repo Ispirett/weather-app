@@ -117,15 +117,41 @@ getWeather = (workingUrl) =>{
         let currentWeather = data.weather[0].main;
 
         $('country').innerHTML = `<em>Country:</em> ${data.sys.country}`;
-        $('temp-div').innerHTML = `<h4> Todays current tempeture is  <em>${data.main.temp}</em> </h4>`;
+        $('temp').innerHTML = ` Todays current tempeture is  <em>°F ${data.main.temp}</em> `;
         $('country-city').innerHTML = `<em>City: </em>${data.name}`;
         $('weather-type').innerHTML = `<span>${data.weather[0].main}</span>`;
         $('weather-img').setAttribute('alt',`${data.weather[0].icon}`);
         $('weather-img').setAttribute('src',ShowWeatherImage(currentWeather));
-        $('humidity').innerText = `Humidity: ${data.main.humidity}`
+        $('humidity').innerText = `Humidity: ${data.main.humidity}`;
+
+        change = () =>{
+            convert(data.main.temp);
+        };
 
 
     });
+
+
+};
+
+
+let counter = 2;
+convert = (f) => {
+
+
+
+    let c = (f - 32 * 5) / 9;
+   // let ff = (c * 9 ) / 5 + 32;
+
+
+    if (counter === 2) {
+        $('temp').innerHTML = `<h4> Todays current tempeture is  <em>°C ${parseInt(c)}</em> </h4>`;
+        counter -= 1;
+        console.log(counter)
+
+    }
+
+
 
 
 };
