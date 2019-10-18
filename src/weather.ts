@@ -1,7 +1,9 @@
+import spare from 'sparetime.js'
+
 
 const apiKey = "8782b27405d40d14bf1e44126fddeb97";
 
-var x = document.getElementById("demo");
+const  x = document.getElementById("demo");
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -13,7 +15,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-   let lat = position.coords.latitude;
+    let lat = position.coords.latitude;
     let lon = position.coords.longitude;
 
 
@@ -42,35 +44,32 @@ let weatherImages = {
 };
 
 
- ShowWeatherImage = (weather) => {
+const ShowWeatherImage = (weather: string): string => {
 
-   let  weatherArr = ['rain','clear','haze','clouds',];
+    let  weatherArr: Array<string> = ['rain','clear','haze','clouds',];
 
+    if(weatherArr[0] === weather.toLowerCase()) {
 
+        console.log( weather.toLowerCase(), weatherArr[0]);
+        return weatherImages.rain;
+    }
 
+    if(weatherArr[1] === weather.toLowerCase()) {
+        console.log( weather.toLowerCase(), weatherArr[1]);
+        return weatherImages.clear;
+    }
 
-       if(weatherArr[0] === weather.toLowerCase()) {
+    if(weatherArr[2] === weather.toLowerCase()) {
 
-           console.log( weather.toLowerCase(), weatherArr[0]);
-           return weatherImages.rain;
-       }
+        console.log( weather.toLowerCase(), weatherArr[2]);
+        return weatherImages.haze;
+    }
 
-       if(weatherArr[1] === weather.toLowerCase()) {
-           console.log( weather.toLowerCase(), weatherArr[1]);
-           return weatherImages.clear;
-       }
+    if(weatherArr[3] === weather.toLowerCase()) {
 
-       if(weatherArr[2] === weather.toLowerCase()) {
-
-            console.log( weather.toLowerCase(), weatherArr[2]);
-            return weatherImages.haze;
-       }
-
-       if(weatherArr[3] === weather.toLowerCase()) {
-
-           console.log( weather.toLowerCase(), weatherArr[3]);
-           return weatherImages.clouds;
-       }
+        console.log( weather.toLowerCase(), weatherArr[3]);
+        return weatherImages.clouds;
+    }
 
 
 
@@ -83,10 +82,10 @@ function $(id){
 
 }
 
-handleUserInput =()=>{
+const handleUserInput =()=>{
 
     // get city from user
-    var city;
+   let city;
 
     city = $('city').value;
 
@@ -106,7 +105,7 @@ handleUserInput =()=>{
 
 
 
-getWeather = (workingUrl) =>{
+const getWeather = (workingUrl) =>{
 
     fetch(workingUrl).then((results) => {
 
@@ -124,7 +123,7 @@ getWeather = (workingUrl) =>{
         $('weather-img').setAttribute('src',ShowWeatherImage(currentWeather));
         $('humidity').innerText = `Humidity: ${data.main.humidity}`;
 
-        change = () =>{
+       const change = () =>{
             convert(data.main.temp);
         };
 
@@ -135,22 +134,17 @@ getWeather = (workingUrl) =>{
 };
 
 
-convert = (f) => {
+const convert = (f) => {
 
 
 
     let c = (f - 32 * 5) / 9;
-   // let ff = (c * 9 ) / 5 + 32;
+    // let ff = (c * 9 ) / 5 + 32;
 
 
 
-        $('temp').innerHTML = `<h4> Todays current tempeture is  <em>°C ${parseInt(c)}</em> </h4>`;
+    $('temp').innerHTML = `<h4> Todays current tempeture is  <em>°C ${parseInt(c)}</em> </h4>`;
 
-        console.log(counter)
-
-
-
-
-
+    console.log(counter)
 
 };

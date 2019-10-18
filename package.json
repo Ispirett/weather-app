@@ -1,0 +1,32 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack  --watch src --mode development",
+    "build": "webpack --mode production",
+    "scss": "scss  --watch scss/main.scss -o css",
+    "tsc": "tsc --watch src/weather.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ispirett/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ispirett/weather-app/issues"
+  },
+  "homepage": "https://github.com/Ispirett/weather-app#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "sparetime.js": "^1.0.5"
+  }
+}
