@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather app</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -21,8 +21,8 @@
                 <div id="form">
                   <label for="city"> Enter city location</label>    
                 <input id="city" type="text"     placeholder="Enter Your City Name">
-                <button id="btn" type="submit" onclick="handleUserInput()">Submit</button>
-                <button onclick="getLocation()">your home</button>
+                <button id="btn-submit" type="submit" >Submit</button>
+                <button id='btn-location' >your home</button>
                 </div>
                 <div id="weather-status">
 
@@ -37,7 +37,7 @@
 
                 <div id="temp-div">
                     <h4 id="temp"> </h4>
-                    <button onclick="change()">C/F</button>
+                    <button id="btn-temp" >C/F</button>
                 </div>
 
             </div>

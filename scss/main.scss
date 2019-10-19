@@ -1,11 +1,12 @@
 body {
-  background-color: #111;
+  background-image: linear-gradient(90deg, rgba(0,34,5,.2), rgba(1,1,1,.8)),
+
+          url("https://external-preview.redd.it/85M3kZ-CePtWrmf1trc8xWtSW_5br1W3OFn96UX_3Pw.jpg?auto=webp&s=6a06431618e8db33ca54b74b8e7a942e7ca48e26");
   color: whitesmoke;
 
   font-family: "Chalkboard SE";
   width: 100%;
 }
-
 
 #weather-header{
 
@@ -32,13 +33,13 @@ body {
 
 
 #weather-body{
-
-  margin:0;
-
+  margin:0 auto;
+  width: 60%;
   display: block;
-
-
   text-align: center;
+
+  border-radius: 1em;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.56);
 
 }
 
@@ -52,7 +53,9 @@ input[type="text"]{
   border-radius: 15px;
   font-size: 20px;
   font-weight: 200;
-
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(39, 39, 39, 0.83);
+  text-align: center;
 }
 
 button{
@@ -95,4 +98,8 @@ span{
   color: whitesmoke;
 
   font-size: 50px;
+}
+
+#temp{
+  text-shadow: 0 1px 1px black ;
 }

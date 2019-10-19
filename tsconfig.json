@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "lib": ["dom"],
+      "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}

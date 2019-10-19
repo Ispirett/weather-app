@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1136d736-381a-4c9b-b8cb-47c779b20f68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/weather-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/weather-bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +50,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -94,6 +98,8 @@
       <workItem from="1548648112843" duration="1798000" />
       <workItem from="1548685848885" duration="27090000" />
       <workItem from="1571383776888" duration="2503000" />
+      <workItem from="1571411939295" duration="5268000" />
+      <workItem from="1571430429591" duration="15615000" />
     </task>
     <servers />
   </component>
@@ -119,7 +125,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
