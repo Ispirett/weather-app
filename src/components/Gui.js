@@ -7,19 +7,15 @@ var Gui = (function () {
     var ShowWeatherImage = function (weather) {
         var weatherArr = ['rain', 'clear', 'haze', 'clouds',];
         if (weatherArr[0] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[0]);
             return settings_1["default"].weatherImages.rain;
         }
         if (weatherArr[1] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[1]);
             return settings_1["default"].weatherImages.clear;
         }
         if (weatherArr[2] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[2]);
             return settings_1["default"].weatherImages.haze;
         }
         if (weatherArr[3] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[3]);
             return settings_1["default"].weatherImages.clouds;
         }
     };
@@ -29,7 +25,6 @@ var Gui = (function () {
         callback(url);
     };
     var showWeather = function (data) {
-        console.log(data);
         var temp = Math.floor(data.main.temp);
         var currentWeather = data.weather[0].main;
         console.info(currentWeather);

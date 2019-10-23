@@ -5,24 +5,18 @@ const Gui = (() => {
     const ShowWeatherImage = (weather: string): string => {
         let weatherArr: Array<string> = ['rain', 'clear', 'haze', 'clouds',];
         if (weatherArr[0] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[0]);
             return settings.weatherImages.rain;
         }
 
         if (weatherArr[1] === weather.toLowerCase()) {
-            //console.log(weather.toLowerCase(), weatherArr[1]);
             return settings.weatherImages.clear;
         }
 
         if (weatherArr[2] === weather.toLowerCase()) {
-
-            //console.log(weather.toLowerCase(), weatherArr[2]);
             return settings.weatherImages.haze;
         }
 
         if (weatherArr[3] === weather.toLowerCase()) {
-
-            //console.log(weather.toLowerCase(), weatherArr[3]);
             return settings.weatherImages.clouds;
         }
 
@@ -36,7 +30,6 @@ const Gui = (() => {
     };
 
     const showWeather = (data):void=> {
-        console.log(data);
         const temp =  Math.floor(data.main.temp);
         let currentWeather = data.weather[0].main;
         console.info(currentWeather)

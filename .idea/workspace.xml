@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1136d736-381a-4c9b-b8cb-47c779b20f68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Gui.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Utillites.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/settings.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/weather-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/weather-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gui.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gui.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

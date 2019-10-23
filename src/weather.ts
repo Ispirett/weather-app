@@ -2,8 +2,6 @@ import Utilities from './components/Utillites'
 import settings from './components/settings'
 import Gui from './components/Gui'
 
-
-
 const setUp = (() => {
    const setDefaultWeatherImage = () =>{
        Spare.sel('#weather-img').attr('src', settings.weatherImages.clear);
@@ -30,9 +28,6 @@ const setUp = (() => {
 })();
 
 //  startup
-
-
-
 Utilities.main(() =>{
     setUp.btnEvents();
     setUp.setDefaultWeatherImage();
