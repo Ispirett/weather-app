@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es3",
-    "lib": ["dom"],
+    "target": "es5",
+    "lib": ["dom", "es2017"],
       "resolveJsonModule": true,
     "esModuleInterop": true
   }

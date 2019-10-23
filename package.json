@@ -8,7 +8,7 @@
     "dev": "webpack  --watch src/*.js --mode development",
     "build": "webpack --mode production",
     "scss": "node-sass  --watch scss/main.scss -o css",
-    "tsc": "tsc --watch src/weather.ts"
+    "tsc": "tsc --watch src/components/*.ts"
   },
   "repository": {
     "type": "git",

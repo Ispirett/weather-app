@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap");
 body {
-  background-image: linear-gradient(90deg, rgba(0, 34, 5, 0.2), rgba(1, 1, 1, 0.8)), url("https://external-preview.redd.it/85M3kZ-CePtWrmf1trc8xWtSW_5br1W3OFn96UX_3Pw.jpg?auto=webp&s=6a06431618e8db33ca54b74b8e7a942e7ca48e26");
+  font-family: 'Merriweather Sans', serif;
+  background-image: linear-gradient(90deg, rgba(0, 34, 5, 0.2), rgba(1, 1, 1, 0.8)), url("http://www.ewallpapers.eu/sites/default/files/499248758.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: whitesmoke;
-  font-family: "Chalkboard SE";
-  width: 100%; }
+  height: 100vh; }
+
+main {
+  width: 60%;
+  margin: 0 auto; }
 
 #weather-header {
   font-size: 25px; }
@@ -11,7 +18,6 @@ body {
   /*background-image:url("https://ak6.picdn.net/shutterstock/videos/6415496/thumb/1.jpg");*/
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
   text-align: center; }
 
 #weather-header {
@@ -19,12 +25,9 @@ body {
   padding-bottom: 20px; }
 
 #weather-body {
-  margin: 0 auto;
-  width: 60%;
   display: block;
   text-align: center;
-  border-radius: 1em;
-  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.56); }
+  border-radius: 1em; }
 
 #form {
   padding: 20px; }
@@ -39,33 +42,73 @@ input[type="text"] {
   box-shadow: 0px 4px 4px rgba(39, 39, 39, 0.83);
   text-align: center; }
 
+input[type='text']:focus {
+  box-shadow: 0px 4px 30px rgba(39, 39, 39, 0.83);
+  background: rgba(255, 255, 255, 0.24);
+  color: white; }
+
 button {
+  margin-left: .3em;
   border: none;
   color: whitesmoke;
-  padding: 20px;
-  background-color: crimson;
+  padding: 1em;
+  background: linear-gradient(90deg, #5433FF 0%, #20BDFF 100%);
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
   font-size: 15px;
-  border-radius: 15px; }
+  border-radius: .5em;
+  outline: none;
+  transition: all .2s linear;
+  font-weight: bold; }
 
 button:hover {
-  background-color: green; }
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px #494949;
+  cursor: pointer; }
 
 #weather-img {
   width: 6em; }
 
 em {
-  color: crimson; }
+  color: #20BDFF; }
 
 span {
   font-size: 30px;
-  color: cadetblue; }
+  color: #20BDFF; }
 
-#humidity {
-  font-size: 20px; }
+#temp-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
+  #temp-div #temp {
+    text-shadow: 0 1px 1px black;
+    font-size: 8em;
+    line-height: .1em;
+    margin-right: .5em; }
 
 #demo {
   color: whitesmoke;
   font-size: 50px; }
 
-#temp {
-  text-shadow: 0 1px 1px black; }
+#img-div img {
+  transition: all .2s linear; }
+
+#img-div img:hover {
+  transform: translateY(-10px); }
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%; }
+  #temp em {
+    margin-top: 1.2em;
+    display: block !important;
+    font-size: .8em; }
+  input[type='text'] {
+    width: 100%;
+    height: 2em; }
+  button {
+    display: block;
+    margin-top: .5em;
+    width: 100%; }
+  #temp {
+    margin-right: 0 !important; } }
