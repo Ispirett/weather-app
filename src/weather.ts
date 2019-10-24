@@ -10,11 +10,11 @@ const setUp = (() => {
         const btnLocatiion = Spare.sel('#btn-location').element;
         const submitBtn = Spare.sel('#btn-submit').element;
 
-        btnLocatiion.onclick = () => {
+        btnLocatiion.onclick = ():void => {
             Utilities.getLocation();
         };
 
-        submitBtn.onclick = () => {
+        submitBtn.onclick = ():void => {
             Gui.handleUserInput((url) =>{
                 Utilities.getWeather(url).then(data => Gui.showWeather(data));
 
@@ -32,6 +32,7 @@ Utilities.main(() =>{
     setUp.btnEvents();
     setUp.setDefaultWeatherImage();
 });
+
 
 
 

@@ -29,3 +29,4 @@ Utillites_1["default"].main(function () {
     setUp.btnEvents();
     setUp.setDefaultWeatherImage();
 });
+console.log("hello");

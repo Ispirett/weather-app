@@ -74,6 +74,17 @@ var Utilities = (function () {
         });
     }
     ;
+    var convertTemp = function (temp, identity) {
+        var cel = Math.floor((temp - 35) * 5 / 9);
+        var tempElement = Spare.sel(identity);
+        var value = tempElement.element.innerText.split(' ')[1];
+        if (value === 'F°') {
+            tempElement.html(cel + " <em>C\u00B0</em>");
+        }
+        else {
+            tempElement.html(temp + " <em>F\u00B0</em>");
+        }
+    };
     var main = function (callback) {
         window.onload = function () {
             callback();
@@ -82,7 +93,8 @@ var Utilities = (function () {
     return {
         getLocation: getLocation,
         getWeather: getWeather,
-        main: main
+        main: main,
+        convertTemp: convertTemp
     };
 })();
 exports["default"] = Utilities;
