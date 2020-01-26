@@ -1,6 +1,6 @@
 # Weather Free 
 ###### A simple weather app using openweather api.
-
+## [Visit site]( https://ispirett.github.io/weather-app/)
 
 ## Getting Started
 
